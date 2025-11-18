@@ -17,4 +17,8 @@ path = kagglehub.dataset_download("jessicali9530/lfw-dataset")
 print("Path to dataset files:", path)
 ```
 
-And replace the path `data/lfw'` with `/kaggle/input/lfw-dataset/lfw-deepfunneled/lfw-deepfunneled`
+And add the following cell right after:
+```
+!mkdir data
+!mv /kaggle/input/lfw-dataset/lfw-deepfunneled/lfw-deepfunneled data/lfw
+```
